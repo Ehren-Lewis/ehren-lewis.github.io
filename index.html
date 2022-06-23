@@ -19,6 +19,11 @@
 
     .styletest {
         background-color: rgb(116, 124, 146);
+        /* border-bottom: 1px solid rgb(116, 124, 255); */
+    }
+
+    .shadow {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     }
 
 
@@ -43,17 +48,21 @@
         background-color: rgb(150, 151, 156);
     }
 
+    .tab button:active {
+        background-color: #ccc;
+    }
+
 </style>
 </head> 
 
 <header>
 
-        <nav class="navbar navbar-expand navbar-dark styletest">
+        <nav class="navbar navbar-expand navbar-dark styletest fixed-top shadow">
             <div class="navbar-nav nav w-100 d-flex justify-content-around">
                 <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="#">About Us</a>
+                <a class="nav-item nav-link" href="#">About</a>
                 <a class="nav-item nav-link" href="#">Contact Us</a>
-                <a class="nav-item nav-link" href="#">Lorum</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
             </div>
         </nav>
 
@@ -61,15 +70,15 @@
 
 <body class="styletest">
     <div style="overflow: hidden;">
-        <img src="./images/office-4959782.jpg" class="absolute" width="100%" height="320px"/>
+        <img src="./images/office-4959782.jpg" class="absolute" width="100%" height="auto px"/>
     </div>
 
     <!-- <div class="container-fluid w-100" style="overflow:hidden; border-width: 10px 0 0 0; border-style: solid; border-color: maroon;"> -->
     <div class="contiainer-fluid w-100 styletest mt-5" style="overflow: hidden;">
         <div class="row text-light">
-            <div class="col-5" style="margin: 0 0 0 100px;">
+            <div class="col-9 col-md-6" style="padding: 0 0 0 100px;">
                 <h1 style="font-family: 'Courier New', Courier, monospace;" >Who Are We?</h1>
-                <p style="color:rgb(216, 221, 213); font-family: 'Courier New', Courier, monospace">CTDigital is a marketing and advertising firm with the key interest in providing both a service to those who are in search,
+                <p style="color:rgb(216, 221, 213); font-family: 'Courier New', Courier, monospace">&emsp;&emsp;CTDigital is a marketing and advertising firm with the key interest in providing both a service to those who are in search,
                     as well as to those who are searching. Whether a local business looking to attract new customers, real estate agencies wanting
                     to sell more properties, individuals on the look for new places to meet their adventurous side, or someone looking to buy a house
                     or rent an apartment, CTDigital meets anyone and everyone's needs.
@@ -77,20 +86,20 @@
             </div>
         </div>
         <div class="row text-light justify-content-end">
-            <div class="col-5" style="margin: 0 100px 0 0;">
+            <div class="col-9 col-md-6" style="padding: 0 100px 0 0;">
                 <h1 style="font-family:'Courier New', Courier, monospace">Clients</h1>
                 <p style="color:rgb(216, 221, 213); font-family: 'Courier New', Courier, monospace">
-                    Clients arange from anything as small as your local pizzaria, coffee shop, or mechanic to as large as real estate
+                    &emsp;&emsp;Clients arange from anything as small as your local pizzaria, coffee shop, or mechanic to as large as real estate
                     brokers looking to advertise their area. We make sure that our clients will have ample access to our audience through 
                     automated email service provided by us.
                 </p>
             </div>
         </div>
         <div class="row text-light">
-            <div class="col-5" style="margin: 0 0 0 100px;">
-                <h1 style="font-family: 'Courier New', Courier, monospace;" >Audience</h1>
+            <div class="col-9 col-md-6" style="padding: 0 0 0 100px;">
+                <h1 style="font-family: 'Courier New', Courier, monospace;">Audience</h1>
                 <p style="color:rgb(216, 221, 213); font-family: 'Courier New', Courier, monospace">
-                    Our audience is no different from anyone we desire to help. Our help all policy guarantees we will help
+                    &emsp;&emsp;Our audience is no different from anyone we desire to help. Our help all policy guarantees we will help
                     assist in always providing you with the information you desire. New places to explore around town? The information
                     is no more than a click away. Looking to move into a new apartment or house at the best prices? We will get you 
                     in contact with just the right people. We guarantee our audience that we will only send our service with your consent, 
@@ -116,7 +125,7 @@
                     <button class="tablinks" onclick="newEvent(showInfo, 'client')">Client</button>
                     <button class="tablinks" onclick="newEvent(showInfo, 'audience')">Audience</button>
                 </div>
-                <div class="tabcontent"
+                <div class="tabcontent">
             </div>
         </div>
 
